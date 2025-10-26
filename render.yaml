@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: quote-worker
+    env: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: DRY_RUN
+        value: "true"
+      - key: CARRIER_A_LOGIN_URL
+        sync: false
+      - key: CARRIER_A_START_URL
+        sync: false
+      - key: CARRIER_A_USER
+        sync: false
+      - key: CARRIER_A_PASS
+        sync: false
+      - key: CARRIER_B_LOGIN_URL
+        sync: false
+      - key: CARRIER_B_START_URL
+        sync: false
+      - key: CARRIER_B_USER
+        sync: false
+      - key: CARRIER_B_PASS
+        sync: false
