@@ -32,7 +32,7 @@ app.post("/submit-quote", async (req, res) => {
   // Placeholder carriers list — update LOGIN_URL/START_URL and env vars later.
   const carriers = [
     {
-      name: "carrierA",
+      name: "UP&C",
       loginUrl: process.env.CARRIER_A_LOGIN_URL || "https://example.com/login-a",
       startUrl: process.env.CARRIER_A_START_URL || "https://example.com/new-quote-a",
       username: process.env.CARRIER_A_USER || "user@example.com",
